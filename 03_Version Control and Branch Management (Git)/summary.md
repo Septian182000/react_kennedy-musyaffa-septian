@@ -1,4 +1,4 @@
-# (2) Version Control and Branch Management (Git)
+# (3) Version Control and Branch Management (Git)
 
 ## Three Points I Got
 
