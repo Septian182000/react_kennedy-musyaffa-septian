@@ -6,4 +6,4 @@
 
 * ### HTML ini juga bisa disebut kerangka dalam suatu website, dimana suatu hal yang dibuat pertama kali dalam pengembangan.
 
-* ### Bisa menginclude CSS untuk memperbagus tampilan website.
+* ### Bisa menginclude CSS untuk memperbagus tampilan website yang kita mau.
