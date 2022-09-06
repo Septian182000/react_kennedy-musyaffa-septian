@@ -24,7 +24,7 @@ if (terdaftar === true){
 
 a = b;
 
-console.log("array = " + lengkap_arr[2]);
+console.log("array = " + lengkapArr[2]);
 console.log("a adalah = " + a);
 console.log("b adalah = " + b);
 perkenalan();
