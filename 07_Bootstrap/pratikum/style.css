@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ms+Madi&family=Quicksand:wght@300;500&family=Rock+Salt&display=swap');
+
+.firstLogo{
+    color: green;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: green !important;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.title {
+    margin-bottom: 70px;
+}
+
+.phone {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+@media (max-width: 600px){
+    .desc {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px){  
+    .desc {
+        width: 50%;
+    }
+}
