@@ -1,0 +1,1 @@
+[Link Soal](https://docs.google.com/document/d/1QEwLv53ARo-Gsl4URZfZ9v1e6rDpK9lQn6XdswkgV7A/edit#)
