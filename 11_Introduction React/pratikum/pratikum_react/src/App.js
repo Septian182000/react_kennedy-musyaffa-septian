@@ -1,4 +1,3 @@
-import './App.css';
 import Home from './task/Home';
 
 import "../src/asset/css/main.css";
