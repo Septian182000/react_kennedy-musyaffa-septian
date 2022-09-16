@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ms+Madi&family=Quicksand:wght@400;500&family=Rock+Salt&display=swap');
+
+.head {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+
+.content {
+    width: 400px;
+}
+
+.radius {
+    text-align: center;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+li {
+    padding: 15px;
+    background-color: #EEF1FF;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.finished {
+    text-decoration: line-through;
+}
+
+.unfinished {
+    color: red;
+}
