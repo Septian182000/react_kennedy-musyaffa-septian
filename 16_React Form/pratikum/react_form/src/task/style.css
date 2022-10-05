@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ms+Madi&family=Quicksand:wght@400;500&family=Rock+Salt&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.formInput {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+form label {
+    font-size: 18px;
+}
+
+form input {
+    width: 100%;
+    padding: 5px;  
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+form textarea {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;  
+}
+
+span {
+    color: red;
+}
+
+form button {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px
+}
+
+.button .submit:hover {
+    font-weight: 800;
+    color: black;
+    background-color:aquamarine;
+}
+
+.button .reset:hover {
+    font-weight: 800;
+    color: white;
+    background-color:rgb(193, 61, 61);
+}
+
+/* .pendidikan {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+} */
+
+.radio-pendidikan {
+    margin-bottom: 10px;
+}
+
+.form-select {
+    margin: 10px 0px 10px 0px;
+}
