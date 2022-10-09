@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import { hapusTodo, cekTodo } from "../store/passengerSlice"
+import { hapusTodo, cekTodo } from "../store/todoSlice"
 
 export default function ListTodo(todo) {
     const dispatch = useDispatch()

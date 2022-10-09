@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { tambahTodo } from "../store/passengerSlice";
+import { tambahTodo } from "../store/todoSlice";
 
 export default function FormTodos() {
     const [input, setInput] = useState("");
