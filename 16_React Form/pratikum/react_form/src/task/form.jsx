@@ -17,7 +17,9 @@ export default function Form() {
     const [errMsgName, setErrorMessageName] = useState("")
     const [errMsgEmail, setErrorMessageEmail] = useState("")
     const [errMsgHandphone, setErrorMessageHandphone] = useState("")
-    const suratKesungguhan = useRef('')
+    const [disabledButton, setDisable] = useState(false)
+    // const [imageUpload, setImage] = useState("")
+    const suratKesungguhan = useRef(null)
     const nameRegex = new RegExp(/^[A-Za-z ]*$/);
     const emailRegex = new RegExp(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/)
     const handPhoneRegex = new RegExp(/[0-9]/g)
@@ -31,11 +33,10 @@ export default function Form() {
                 setErrorMessageName("")
             } else {
                 setErrorMessageName({nama: "Nama Harus Berupa Huruf"})
+                setDisable(true)
             }
         }
-
-        // submitValidation(nameRegex.test(value))
-
+        
         setData({
             ...data,
             [name]: value,
@@ -51,6 +52,7 @@ export default function Form() {
                 setErrorMessageEmail("")
             } else {
                 setErrorMessageEmail({email: "Email Tidak Sesuai"})
+                setDisable(true)
             }
         }
         
@@ -69,12 +71,15 @@ export default function Form() {
         if(name === "noHandphone"){
             if(!handPhoneRegex.test(value)){
                 setErrorMessageHandphone({noHandphone: "No Handphone tidak sesuai"})
+                setDisable(true)
             }
             else if(value.length < 9){
                 setErrorMessageHandphone({noHandphone: "Nomor minimal 9 angka"})
+                setDisable(true)
             } 
             else if(value.length > 14){
                 setErrorMessageHandphone({noHandphone: "Nomor maksimal 14 angka"})
+                setDisable(true)
             }
             else {
                 setErrorMessageHandphone("")
@@ -99,13 +104,18 @@ export default function Form() {
         })
     }
 
+    // const onImageUpload = e => {
+    //     const file = e.target.files[0]
+    //     setImage(file)
+    // }
+
     // const submitValidation = (e) => {
     //     const button = document.querySelector(".submit")
 
     //     if(e){
-    //         button.disabled = false
-    //     } else {
     //         button.disabled = true
+    //     } else {
+    //         button.disabled = false
     //     }
     // }
 
@@ -122,6 +132,7 @@ export default function Form() {
         }
         else {
             setData(baseData)
+            suratKesungguhan.current.value = "";
             setErrMsg(alert(`Data pendaftar "${data.nama}" Berhasil Diterima!`))
             setErrMsg("")
         }
@@ -229,7 +240,7 @@ export default function Form() {
                         />
                     </label>
                     <div className='button'>
-                        <input type="Submit" value="Submit" className="submit"/>
+                        <input type="Submit" value="Submit" className="submit" disabled={disabledButton}/>
                         <input type="Submit" value="Reset" onClick={resetData} className="reset"/>
                     </div>
                 </form>
