@@ -1,4 +1,4 @@
-# (19) Deploymeny
+# (19) Deployment
 
 ## Three Points I Got
 
