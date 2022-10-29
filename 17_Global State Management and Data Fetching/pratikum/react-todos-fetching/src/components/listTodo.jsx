@@ -16,6 +16,7 @@ export default function ListTodo(todo) {
                     </div>    
                     <div>
                         <p>{todo.todo.title}</p>
+                        <p>{todo.todo.nama}</p>
                     </div>
                     <div>
                         <i className="fa-solid fa-trash delete" onClick={() => dispatch(deleteTodo(todo.todo.id))}></i>

@@ -15,9 +15,9 @@ export const fetchTodo = createAsyncThunk("fetch/todos", async() => {
     }
 })
 
-export const createTodo = createAsyncThunk("create/todos", async(data) => {
+export const createTodo = createAsyncThunk("create/todos", async({title, nama}) => {
     try {
-        const response = await todoAPI.createTodos(data);
+        const response = await todoAPI.createTodos({title, nama});
         return response.data.insert_todos;
     } catch(error) {
         console.log(error);

@@ -8,16 +8,19 @@ export default function FormTodos() {
     const dispatch = useDispatch();
 
     const handlerOnChange = (e) => {
-        setInput(e.target.value);
+        const name = e.target.name
+        const value = e.target.value
+        setInput(name, value)
     }
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         const title = formData.get("title");
+        const nama = formData.get("nama");
         let newToDoList = !input
           ? alert("Title can't be empty")
-          : dispatch(createTodo({ title }));
+          : dispatch(createTodo({ title, nama }));
     
         return newToDoList;
       };
@@ -33,6 +36,13 @@ export default function FormTodos() {
                         onChange={handlerOnChange} 
                         className="me-4 input-text"
                         name="title"
+                    />
+                    <input 
+                        type="text" 
+                        placeholder="Add Title..." 
+                        onChange={handlerOnChange} 
+                        className="me-4 input-text"
+                        name="nama"
                     />
                     <input type="submit" className="btn btn-success"/>
                 </form>
