@@ -12,5 +12,5 @@
 
 ### 3. Apollo Client ReactJS Setup
 - Import gql and useQuery and then write your query, or you can copy the query from hasura console instead.
-- Get initial data by doing query on the server, call useQuery on top of your code
+- Get initial data by doing query on the server, call useQuery on top of your code.
 - Consume data in your jsx code, note that in first request data is null so need use optional chaining to avoid error.
