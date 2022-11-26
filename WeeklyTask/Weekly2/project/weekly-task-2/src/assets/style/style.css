@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins&family=Quicksand:wght@400;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand',  sans-serif;
+}
+
+.navBar{
+    background-color: black !important;
+}
+
+.main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.hero{
+    margin-bottom: 100px;
+}
+
+.title-install{
+    font-size: 30px;
+    font-weight: bold;
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
+    margin: 40px auto;
+}
+
+.button-install{
+    gap: 30px;
+}
+
+.button{
+    width: 250px;
+    padding: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.button h4{
+    font-size: 20px;
+}
+
+.button-icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.apple{
+    width: 90px;
+    height: 50px;
+}
+
+.poster img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.contact{
+    padding: 0px 30px;
+    margin-bottom: 100px;
+}
+
+.title-contact{
+    margin-bottom: 80px;
+}
+
+.form{
+    gap: 50px;
+}
+
+.form-input{
+    width: 500px;
+    height: 600px;
+    padding: 16px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+input{
+    padding: 10px;
+}
+
+textarea{
+    border: 2px solid black;
+}
+
+button {
+    margin: 0 auto;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.title-about {
+    margin-bottom: 80px;
+}
+
+.about {
+    margin-bottom: 100px;
+    background-color: #ededed;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.about-content{
+    gap: 50px;
+    border-radius: 20px;
+}
+.about-poster img{
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.about-desc {
+    text-align: justify;
+    font-weight: 600;
+    line-height: 2.5rem;
+    align-items: center;
+}
+
+.about-desc img{
+    width: 600px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
